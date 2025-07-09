@@ -1,0 +1,13 @@
+1. The latency for reading operations (readValue) is generally higher than that for writing operations (writeValue), with a mean of 0.74ms versus 0.37ms respectively, suggesting a potential focus area for performance optimization.
+
+2. The IOPS (Input/Output Operations Per Second) for read operations are significantly higher than those for write operations, with a mean of 78484.14 compared to 28153.00 IOPS, indicating an imbalance in data access patterns that may impact read-heavy workloads.
+
+3. Throughput for read operations is also significantly higher than that for write operations, with a mean of 1278680.14 KiB/s versus 691009.94 KiB/s respectively, reinforcing the observation of higher activity on read operations.
+
+4. The standard deviations for both latency and throughput metrics are relatively high, suggesting some degree of variability or inconsistency in the system's performance.
+
+5. The queue length mean of 40.37 indicates that there is an average of 40 pending requests at any given time, which could potentially impact response times due to increased wait times for I/O operations.
+
+6. Although not significantly high compared to other metrics, the maximum latency values for both read and write operations (0.94ms and 0.39ms respectively) indicate occasional instances of high latency that might need further investigation.
+
+7. The relatively small standard deviation in latency for write operations compared to read operations suggests a more consistent response time for write operations, which could be due to the system design or specific implementation considerations.
